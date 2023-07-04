@@ -2,6 +2,8 @@ import { HomeBanner } from './components/Banner';
 import { HomeAbout } from './components/About';
 import { HomeHeader } from './components/Header';
 import { HomeBio } from './components/Bio';
+import { HomeFindMe } from './components/FindMe';
+import { HomeFooter } from './components/Footer';
 
 
 export function Home() {
@@ -11,6 +13,8 @@ export function Home() {
             <HomeBanner />
             <HomeAbout />
             <HomeBio />
+            <HomeFindMe />
+            <HomeFooter />
         </main>
     )
 }

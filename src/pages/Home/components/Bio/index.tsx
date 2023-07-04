@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 export function HomeBio() {
 
     return (
-        <section className={styles.bio_section}>
+        <section className={styles.bio_section} id='bio'>
             <h2 className='section_title'>Bio</h2>
             <div className={styles.bio_entry}>
                 <div className={styles.bio_date}>1999</div>

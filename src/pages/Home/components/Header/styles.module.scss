@@ -15,6 +15,7 @@
         cursor: default;
 
         &:hover {
+            scale: 120%;
             letter-spacing: 6px;
             transition: 0.2s;
         }
@@ -25,14 +26,22 @@
         flex-direction: row;
         gap: 10px;
 
-        li {
+        a {
             cursor: pointer;
             font-size: 1.25rem;
             color: var(--color-white);
             list-style-type: none;
             position: relative;
+            transition: .2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
 
             &:hover {
+                transition: .2s;
+                scale: 120%;
+
                 &::after {
                     content: ' ';
                     position: absolute;

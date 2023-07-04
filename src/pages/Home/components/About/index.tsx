@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 export function HomeAbout() {
     return (
-        <section className={styles.section_banner}>
+        <section className={styles.section_banner} id='about'>
             <div className={styles.box1}>
                 <div className={styles.text}>
                     <h1>João V. Guerber</h1>

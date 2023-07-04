@@ -1,0 +1,24 @@
+.find_me_section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .icon_item {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        .icon_container {
+            width: 25px;
+        }
+
+        a {
+            font-size: 1.125rem;
+            color: var(--color-white);
+        }
+    }
+}

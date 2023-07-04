@@ -23,6 +23,7 @@
             transition: .5s;
 
             &:hover {
+                scale: 120%;
                 letter-spacing: 2px;
                 transition: .5s;
             }
@@ -32,6 +33,12 @@
             display: block;
             font-size: 5rem;
             font-weight: bold;
+            transition: .2s;
+
+            &:hover {
+                transition: .2s;
+                scale: 150%;
+            }
         }
 
         span {

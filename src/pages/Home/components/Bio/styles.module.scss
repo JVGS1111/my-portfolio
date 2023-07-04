@@ -1,69 +1,27 @@
-.section_banner {
+.bio_section {
     max-width: 500px;
     margin: 0 auto;
     margin-top: 10px;
 
-    .box1 {
+    .bio_entry {
         display: flex;
+        width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        gap: 15px;
 
-        .text {
-            display: flex;
-            flex-direction: column;
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            h3 {
-                font-size: 1rem;
-                font-weight: 300;
-            }
+        &+.bio_entry {
+            margin-top: 10px;
         }
 
-        .img_wrapper {
-            width: 112px;
-            height: 112px;
-            border-radius: 50%;
-            background-color: var(--color-brown-300);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .bg_img {
-                height: 110px;
-                width: 110px;
-                border-radius: 50%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-image: url('../../../../../public/imgs/me1.jpg');
-            }
-        }
-    }
-
-    .box2 {
-        .section_title {
-            margin-bottom: 10px;
-            position: relative;
-            width: min-content;
-
-            &::after {
-                content: ' ';
-                height: 3px;
-                position: absolute;
-                width: 100%;
-                background-color: var(--color-blue-500);
-                bottom: -3px;
-                left: 0;
-            }
+        .bio_date {
+            color: var(--color-white);
+            font-weight: bold;
+            font-size: 1.125rem;
         }
 
-        p {
-            font-weight: 500;
-            text-align: justify;
-            line-height: 20px;
+        .bio_text {
+            color: var(--color-white);
+            font-size: 1.125rem;
         }
     }
 }

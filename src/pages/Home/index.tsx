@@ -1,6 +1,7 @@
 import { HomeBanner } from './components/Banner';
-import { HomeBio } from './components/Bio';
+import { HomeAbout } from './components/About';
 import { HomeHeader } from './components/Header';
+import { HomeBio } from './components/Bio';
 
 
 export function Home() {
@@ -8,6 +9,7 @@ export function Home() {
         <main>
             <HomeHeader />
             <HomeBanner />
+            <HomeAbout />
             <HomeBio />
         </main>
     )

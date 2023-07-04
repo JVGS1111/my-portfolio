@@ -1,20 +1,21 @@
 import styles from './styles.module.scss';
 
 export function HomeBio() {
+
     return (
-        <section className={styles.section_banner}>
-            <div className={styles.box1}>
-                <div className={styles.text}>
-                    <h1>João V. Guerber</h1>
-                    <h3>Software developer {'(Developer / Gamer / Fitness)'}</h3>
-                </div>
-                <div className={styles.img_wrapper}>
-                    <div className={styles.bg_img}></div>
-                </div>
+        <section className={styles.bio_section}>
+            <h2 className='section_title'>Bio</h2>
+            <div className={styles.bio_entry}>
+                <div className={styles.bio_date}>1999</div>
+                <div className={styles.bio_text}> Born in Rio Negro, {'Brazil'}</div>
             </div>
-            <div className={styles.box2}>
-                <h2 className={styles.section_title}>About</h2>
-                <p>João, a talented 24-year-old Brazilian front-end and mobile programmer, is passionate about developing intuitive and responsive interfaces. In addition to his programming skills, he is also an avid gamer and takes care of his physical health and well-being by maintaining a fitness routine. With determination and dedication, João constantly seeks challenges and opportunities to improve his skills and achieve success in his career.</p>
+            <div className={styles.bio_entry}>
+                <div className={styles.bio_date}>2021</div>
+                <div className={styles.bio_text}>Completed a graduation in Systems Analysis and Development (UNINTER)</div>
+            </div>
+            <div className={styles.bio_entry}>
+                <div className={styles.bio_date}>2021 to present</div>
+                <div className={styles.bio_text}>Working as front-end developer at Wiid</div>
             </div>
         </section>
     )

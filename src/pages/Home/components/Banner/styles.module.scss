@@ -1,5 +1,41 @@
 .section_banner {
     width: 100%;
-    background-color: var(--color-brown-300);
-    height: 300px;
+
+    .container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+
+        .presentation_text {
+            font-size: 1.5rem;
+            color: var(--color-black);
+            margin-bottom: 20px;
+            background-color: var(--color-brown-300);
+            padding: 7px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: .5s;
+
+            &:hover {
+                letter-spacing: 2px;
+                transition: .5s;
+            }
+        }
+
+        .type_animation {
+            display: block;
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        span {
+            color: var(--color-white);
+        }
+    }
 }

@@ -11,6 +11,9 @@ const strings = [
     'Expo',
     'Angular 2+',
     'Typescript',
+    'sass',
+    'Taiwind',
+    'Material UI',
     'gaming',
     'cats'
 ]
@@ -48,7 +51,6 @@ export function HomeBanner() {
                 <div className={styles.animation_contianer}>
                     <span className={styles.type_animation} ref={el} />
                 </div>
-
             </div>
         </section>
     )

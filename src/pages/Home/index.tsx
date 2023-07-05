@@ -1,3 +1,4 @@
+import styles from './styles.module.scss';
 import { HomeBanner } from './components/Banner';
 import { HomeAbout } from './components/About';
 import { HomeHeader } from './components/Header';
@@ -8,7 +9,7 @@ import { HomeFooter } from './components/Footer';
 
 export function Home() {
     return (
-        <main>
+        <main className={styles.main}>
             <HomeHeader />
             <HomeBanner />
             <HomeAbout />

@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
 
+
     .title {
         letter-spacing: 4px;
         transition: 0.2s;
@@ -52,6 +53,22 @@
                     bottom: -5px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 900px) {
+
+
+        justify-content: center;
+        padding: 10px;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        ul {
+            display: none;
+
         }
     }
 }

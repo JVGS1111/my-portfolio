@@ -12,6 +12,31 @@
         height: 100%;
         margin-bottom: 50px;
 
+        .animation_contianer {
+            display: flex;
+            flex-direction: row;
+            height: 5rem;
+            align-items: center;
+
+            .type_animation {
+                display: block;
+                font-size: 5rem;
+                font-weight: bold;
+
+            }
+
+            span {
+                color: var(--color-white);
+            }
+
+            transition: .2s;
+
+            &:hover {
+                transition: .2s;
+                scale: 150%;
+            }
+        }
+
         .presentation_text {
             font-size: 1.5rem;
             color: var(--color-black);
@@ -27,22 +52,16 @@
                 letter-spacing: 2px;
                 transition: .5s;
             }
-        }
 
-        .type_animation {
-            display: block;
-            font-size: 5rem;
-            font-weight: bold;
-            transition: .2s;
+            @media (max-width: 900px) {
 
-            &:hover {
-                transition: .2s;
-                scale: 150%;
+                &:hover {
+                    scale: none;
+                    letter-spacing: 2px;
+                    transition: .5s;
+                }
             }
         }
 
-        span {
-            color: var(--color-white);
-        }
     }
 }

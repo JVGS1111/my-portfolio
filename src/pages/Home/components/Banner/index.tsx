@@ -1,5 +1,7 @@
+import { useEffect, useRef } from 'react';
 import styles from './styles.module.scss';
-import Typed from 'react-typed';
+///@ts-ignore
+import Typed from 'typed.js';
 
 const strings = [
     'React',
@@ -14,6 +16,28 @@ const strings = [
 ]
 
 export function HomeBanner() {
+
+    const el = useRef<HTMLSpanElement>(null);
+
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: strings, // Strings to display
+            // Speed settings, try diffrent values untill you get good results
+            typeSpeed: 200,
+            backSpeed: 100,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop: true,
+            cursorBlinking: true
+
+        });
+
+        // Destropying
+        return () => {
+            typed.destroy();
+        };
+    }, []);
+
     return (
         <section className={styles.section_banner}>
             <div className={styles.container}>
@@ -21,12 +45,10 @@ export function HomeBanner() {
                     Hi! I am front-end developer,
                     talk to me about:
                 </div>
-                <Typed
-                    strings={strings}
-                    typeSpeed={200}
-                    loop
-                    className={styles.type_animation}
-                />
+                <div className={styles.animation_contianer}>
+                    <span className={styles.type_animation} ref={el} />
+                </div>
+
             </div>
         </section>
     )

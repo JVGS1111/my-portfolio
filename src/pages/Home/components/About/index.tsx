@@ -14,7 +14,7 @@ export function HomeAbout() {
             </div>
             <div className={styles.box2}>
                 <h2 className='section_title'>About</h2>
-                <p>João, a talented 24-year-old Brazilian front-end and mobile programmer, is passionate about developing intuitive and responsive interfaces. In addition to his programming skills, he is also an avid gamer and takes care of his physical health and well-being by maintaining a fitness routine. With determination and dedication, João constantly seeks challenges and opportunities to improve his skills and achieve success in his career.</p>
+                <p>João, a talented 25-year-old Brazilian front-end and mobile programmer, is passionate about developing intuitive and responsive interfaces. In addition to his programming skills, he is also an avid gamer and takes care of his physical health and well-being by maintaining a fitness routine. With determination and dedication, João constantly seeks challenges and opportunities to improve his skills and achieve success in his career.</p>
             </div>
         </section>
     )

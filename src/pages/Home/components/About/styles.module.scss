@@ -23,8 +23,8 @@
         }
 
         .img_wrapper {
-            width: 102px;
-            height: 102px;
+            min-width: 102px;
+            min-height: 102px;
             border-radius: 50%;
             background-color: var(--color-brown-300);
             display: flex;
@@ -34,7 +34,7 @@
 
             .bg_img {
                 height: 100px;
-                width: 100px;
+                aspect-ratio: 1/1;
                 border-radius: 50%;
                 background-position: center;
                 background-repeat: no-repeat;
